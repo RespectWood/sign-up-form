@@ -1,1 +1,170 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
 
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    background-color: rgba(78, 125, 47, 0.523);
+    color:#ffffff;
+
+}
+
+.left-bg{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+    overflow: hidden;
+  }
+
+  .left-bg > img {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+  }
+
+.logo-banner{
+    display: flex;
+    position: absolute;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    top: 13%;
+    width: 100%;
+    padding: 8px;
+    background-color: #073233ab;
+    font-size: 28px;
+  }
+
+
+.logo{
+    height: 6rem;
+    min-width: auto;
+    object-fit: contain;
+  }
+
+.main-section{
+    overflow: scroll;
+    flex: 6;
+}
+
+.signup-header-text{
+
+    padding: 64px 36px 0px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 64px;
+
+
+}
+
+.form-section{
+    font-size: 12px;
+    box-shadow: 8px 4px 4px #131413cf; 
+}
+
+.signup-form{
+    background-color: #073233ab;
+    border: none;
+    border-radius: 0px;
+
+    margin: 0 0 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+.signup-form > div {
+    width: 40%;
+    margin-bottom: 20px;
+
+
+}
+
+
+.form-row {
+    border: none;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-weight: 700;
+}
+
+.form-row input[type='text'],
+input[type="email"],
+input[type="number"],
+input[type="password"]  {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+    width: 60%;
+    padding: 7px;
+    font-size: 14px;
+
+}
+
+input:invalid:focus{
+    background:rgba(255, 171, 171, 0.821);
+
+}
+
+  .form-row label{
+    padding-top: 0%;
+    padding-bottom: 15px;
+    padding-left: 10px;
+  }
+
+  .submit-section{
+    display: flex;
+  }
+
+  .submit-section > button{
+    font-weight: 700;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #e8af04;;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 50px;
+    box-shadow: 2px 2px 2px #0732335b; 
+
+  }
+
+  .submit-section > p{
+    margin-left: 20px;
+    font-weight: 700;
+  }
+
+  .submit-section > p > a{
+    color:#131413cf
+  }
+
+  .submit-section > p > a:hover{
+    color:#0732335b
+  }
+
+
+#match-password-msg{
+    color:rgba(255, 171, 171, 0.821);
+    font-size: 12px;
+    padding: 0%;
+}
+
+#password-msg-container{
+    padding: 0%;
+    margin: 0%;
+    overflow: visible;
+}
